@@ -1,6 +1,8 @@
 package com.ph.recipeme.loadingScreen.MainScreen;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -12,11 +14,10 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.ph.recipeme.R;
+import com.ph.recipeme.loadingScreen.SignInScreen.mainSignIn;
 
 public class SignUp extends AppCompatActivity {
-
-    private
-
+    private String userFullname, userEmailaddress, userContactnumber, userPassword, userConfirmedPassword;
     TextView signinprocess;
     Button signUp;
     EditText fullName, emailAddress, contactNo, password, confirmedPassword;
@@ -41,8 +42,33 @@ public class SignUp extends AppCompatActivity {
         password = findViewById(R.id.userPassword);
         confirmedPassword = findViewById(R.id.userConfirmPassword);
 
+        //Getting Value from this fields
+        userFullname = String.valueOf(fullName.getText());
+        userEmailaddress = String.valueOf(emailAddress.getText());
+        userContactnumber = String.valueOf(contactNo.getText());
+        userPassword = String.valueOf(password.getText());
+        userConfirmedPassword = String.valueOf(confirmedPassword.getText());
 
-        
+        //checking empty fields * this is not VALID * all fields must be filled correctly
+        if (userFullname.isBlank()) {
+
+        } else if (userFullname.isEmpty()) {
+
+        }
+        if (userEmailaddress.isEmpty() || userEmailaddress.){
+
+        }
+
+
+        //Going back to sign-in page
+        signinprocess.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SignUp.this, mainSignIn.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
 }

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".loadingScreen.navigationFragments.HomeFragment">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <com.google.android.material.search.SearchBar
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:navigationIconTint="@color/cherry_red"
+                android:backgroundTint="@color/white"
+                app:forceDefaultNavigationOnClickListener="false"
+                app:navigationIcon="@drawable/baseline_fastfood_24"
+                android:textAppearance="@style/SearchBarTextStyle"
+                android:hint="Looking For Recipe?"
+                tools:ignore="HardcodedText" />
+
+        </androidx.cardview.widget.CardView>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.search.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:textAppearance="@style/SearchBarTextStyle"
+        app:iconifiedByDefault="false"
+        android:hint="what recipe you're looking for?"
+        app:backgroundTint="@color/white"
+        app:layout_anchor="@id/search_bar"
+        tools:ignore="HardcodedText" >
+
+    </com.google.android.material.search.SearchView>
+
+     <TextView
+        android:id="@+id/popularRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textAlignment="textStart"
+        android:text="Popular Recipes"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_medium"
+        tools:ignore="HardcodedText" />
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="150dp"
+            app:iss_auto_cycle="true"
+            app:iss_period="1000"
+            app:iss_delay="1000"
+            app:iss_text_align="CENTER"/>
+
+        <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:rowCount="4">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_column="0"
+                    android:layout_row="0">
+
+                    <ImageView
+                        android:id="@+id/userWhoPost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_account_circle_24"
+                        android:padding="20dp"
+                        android:layout_gravity="start"/>
+
+                    <ImageView
+                        android:id="@+id/likeCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:importantForAccessibility="no"
+                        android:padding="20dp"
+                        android:layout_gravity="end"
+                        android:src="@drawable/baseline_favorite_24"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <style name="BottomNavTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/poppins_bold</item> <!-- Replace with your font file name -->
+        <item name="android:textColor">@color/black</item> <!-- Optional: Set text color -->
+        <item name="android:textSize">13sp</item> <!-- Optional: Set text size -->
+    </style>
+    <style name="SearchBarTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/poppins_medium</item> <!-- Replace with your font file name -->
+        <item name="android:textColor">@color/black</item> <!-- Optional: Set text color -->
+        <item name="android:textSize">15sp</item> <!-- Optional: Set text size -->
+    </style>
+</resources>

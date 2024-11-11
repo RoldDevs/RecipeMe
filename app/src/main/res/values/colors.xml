@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 70s Retro -->
+    <color name="avocado_green">#4B8B3B</color>
+    <color name="burnt_orange">#C65D29</color>
+    <color name="mustard_yellow">#D1A62D</color>
+    <color name="brown">#5B3A29</color>
+    <color name="cream">#F6E2B5</color>
+
+    <!-- 80s Neon -->
+    <color name="electric_blue">#00BFFF</color>
+    <color name="hot_pink">#FF69B4</color>
+    <color name="lime_green">#32CD32</color>
+    <color name="bright_purple">#8A2BE2</color>
+
+    <!-- Vintage Pastels -->
+    <color name="mint_green">#98FF98</color>
+    <color name="peach">#FFDAB9</color>
+    <color name="lavender">#E6E6FA</color>
+    <color name="pale_yellow">#FFFFE0</color>
+    <color name="soft_pink">#FFB6C1</color>
+
+    <!-- Retro Earth Tones -->
+    <color name="terracotta">#E67E22</color>
+    <color name="olive_green">#7D7C4B</color>
+    <color name="muted_red">#C0392B</color>
+    <color name="mustard">#F1C40F</color>
+    <color name="beige">#F5F5DC</color>
+
+    <!-- Classic Retro -->
+    <color name="cherry_red">#FF2B2B</color>
+    <color name="rose_red">#FF033E</color>
+    <color name="royal_blue">#4169E1</color>
+    <color name="golden_yellow">#FFD700</color>
+    <color name="forest_green">#228B22</color>
+    <color name="creamy_white">#FAEBD7</color>
+
+    <!-- Classic Colors -->
+    <color name="gray">#808080</color>
+    <color name="split_gray">#D6D6D6</color>
+</resources>

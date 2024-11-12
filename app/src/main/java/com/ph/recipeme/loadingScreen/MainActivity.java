@@ -12,7 +12,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.ph.recipeme.R;
-import com.ph.recipeme.loadingScreen.MainPage.userdisplay;
 import com.ph.recipeme.loadingScreen.MainScreen.SignIn;
 import com.ph.recipeme.loadingScreen.security.EmulatorCheckUtil;
 
@@ -39,14 +38,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void startUp() {
-        new Handler().postDelayed(new Runnable() {
-        @Override
-        public void run() {
+        new Handler().postDelayed(() -> {
             // Start the main activity
-            Intent intent = new Intent(MainActivity.this, userdisplay.class);
+            Intent intent = new Intent(MainActivity.this, SignIn.class);
             startActivity(intent);
             finish(); // Close the splash activity so it won't be shown when pressing back
-        }
-    }, SPLASH_DELAY);
+        }, SPLASH_DELAY);
     }
 }

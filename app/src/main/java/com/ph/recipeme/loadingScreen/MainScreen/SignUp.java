@@ -50,14 +50,15 @@ public class SignUp extends AppCompatActivity {
         userConfirmedPassword = String.valueOf(confirmedPassword.getText());
 
         //checking empty fields * this is not VALID * all fields must be filled correctly
+        /*   TODO
         if (userFullname.isBlank()) {
 
         } else if (userFullname.isEmpty()) {
 
         }
-        if (userEmailaddress.isEmpty() || userEmailaddress.){
+        if (userEmailaddress.isEmpty() || userEmailaddress.isBlank()) {
 
-        }
+        }*/
 
 
         //Going back to sign-in page

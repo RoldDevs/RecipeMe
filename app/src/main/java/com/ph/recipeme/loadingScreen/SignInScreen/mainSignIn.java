@@ -1,6 +1,9 @@
 package com.ph.recipeme.loadingScreen.SignInScreen;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,8 +12,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.ph.recipeme.R;
+import com.ph.recipeme.loadingScreen.MainScreen.SignUp;
 
 public class mainSignIn extends AppCompatActivity {
+
+    TextView signUpGoBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,5 +28,14 @@ public class mainSignIn extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        signUpGoBack = findViewById(R.id.signUpProcess);
+
+        signUpGoBack.setOnClickListener(view -> {
+            Intent intent = new Intent(mainSignIn.this, SignUp.class);
+            startActivity(intent);
+            finish();
+        });
+
     }
 }

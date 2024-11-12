@@ -7,8 +7,8 @@
                 android:topLeftRadius="200dp"
                 android:bottomLeftRadius="200dp"/>
             <gradient
-                android:startColor="@color/cherry_red"
-                android:endColor="@color/cherry_red"
+                android:startColor="@color/rose_red"
+                android:endColor="@color/rose_red"
                 android:angle="135"/>
         </shape>
     </item>
@@ -23,7 +23,7 @@
             <solid android:color="@android:color/transparent"/>
             <stroke
                 android:width="4dp"
-                android:color="@color/cherry_red"/>
+                android:color="@color/rose_red"/>
         </shape>
     </item>
 </layer-list>

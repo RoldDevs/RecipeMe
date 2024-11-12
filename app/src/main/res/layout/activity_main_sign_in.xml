@@ -28,13 +28,12 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-
     </FrameLayout>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="40dp"
@@ -60,14 +59,9 @@
                 android:id="@+id/animation_view"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_margin="5dp"
-                app:layout_constraintBottom_toTopOf="@+id/recipeTitle"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.85"
+                android:layout_margin="28dp"
                 app:lottie_autoPlay="true"
-                app:lottie_fileName="recipe_mainpage_animation.json"
+                app:lottie_fileName="thinking_animation.json"
                 app:lottie_loop="true" />
 
             <TextView
@@ -78,14 +72,12 @@
                 android:text="Welcome to RecipeMe!"
                 android:padding="5dp"
                 android:textAlignment="textStart"
-                android:textColor="@color/cherry_red"
+                android:textColor="@color/rose_red"
                 android:textSize="25sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/animation_view"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.487"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.704"
+                app:layout_constraintVertical_bias="0.0"
                 tools:ignore="HardcodedText" />
 
             <EditText
@@ -95,9 +87,9 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="10dp"
-                android:importantForAutofill="yes"
+                android:importantForAutofill="no"
                 android:inputType="textEmailAddress"
-                android:fontFamily="@font/poppins"
+                android:fontFamily="@font/poppins_medium"
                 android:padding="10dp"
                 android:background="@drawable/edittext_style"
                 android:textSize="15sp"
@@ -114,9 +106,9 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="10dp"
-                android:importantForAutofill="yes"
+                android:importantForAutofill="no"
                 android:inputType="textPassword"
-                android:fontFamily="@font/poppins"
+                android:fontFamily="@font/poppins_medium"
                 android:padding="10dp"
                 android:background="@drawable/edittext_style"
                 android:textSize="15sp"
@@ -133,21 +125,21 @@
                 android:fontFamily="@font/poppins_medium"
                 android:text="Forgot Password"
                 android:textAlignment="center"
-                android:textColor="@color/cherry_red"
+                android:textColor="@color/rose_red"
                 android:textSize="13sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userPassword"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.08"
-                app:layout_constraintStart_toEndOf="@+id/signInNotif"
+                app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="HardcodedText" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/loginProcess"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:layout_marginTop="140dp"
-                android:layout_marginBottom="60dp"
+                android:layout_marginBottom="28dp"
+                android:layout_marginTop="48dp"
                 android:background="@drawable/signup_button_layout"
                 android:fontFamily="@font/poppins_bold"
                 android:text="Log In"
@@ -157,6 +149,38 @@
                 tools:ignore="HardcodedText" />
 
         </LinearLayout>
-
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/signInNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Don't Have an Account?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/signUpProcess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textColor="@color/rose_red"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toEndOf="@+id/signInNotif"
+        tools:ignore="HardcodedText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

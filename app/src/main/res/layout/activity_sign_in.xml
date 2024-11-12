@@ -101,7 +101,7 @@
         android:fontFamily="@font/poppins_medium"
         android:text="Sign Up"
         android:textAlignment="center"
-        android:textColor="@color/cherry_red"
+        android:textColor="@color/rose_red"
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

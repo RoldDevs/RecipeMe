@@ -2,4 +2,4 @@ Welcome to **RecipeMe** – a social media app dedicated exclusively to food ent
 
 ---
 
-> "Food is not just fuel; it’s an experience. In the same way, sharing it is more than a post – it's a story, a memory, and a moment shared."
+> *"Food is not just fuel; it’s an experience. Sharing it is more than a post – it's a story, a memory, and a moment shared."*

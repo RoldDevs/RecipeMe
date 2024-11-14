@@ -2,4 +2,13 @@
     <string name="app_name">RecipeMe</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terms_and_agreement">Terms and Agreement\n\n
+        1. Introduction\nWelcome to RecipeMe! These Terms and Agreement govern your use of our food application, including services related to food recipes, ordering, reviews, and more. By downloading, installing, and using this app, you agree to comply with these terms.\n\n
+        2. User Accounts\nTo access certain features, you must create an account. You are responsible for the confidentiality of your account information and agree not to share it with others. Any activity on your account is your responsibility.\n\n
+        3. Data Collection and Privacy\nWe may collect personal data to improve user experience, facilitate orders, and personalize content. Please review our Privacy Policy for information on how we collect, use, and protect your information. By using our app, you consent to this data collection.\n\n
+        4. User Conduct\nYou agree to use the app responsibly, respecting the rights of other users. Prohibited activities include:\n- Posting inappropriate, offensive, or illegal content\n- Spamming or hacking\n- Impersonating others\nWe reserve the right to suspend or terminate accounts violating these terms.\n\n
+        5. Content Ownership and Licensing\nAll content, including recipes, images, and text provided by our app, is owned by us or licensed to us. You may use the content only within the app and may not reproduce or redistribute it without permission.\n\n
+        6. Liability\nWe are not responsible for any damages, losses, or injuries resulting from the use of the app, including but not limited to reliance on information within the app, technical issues, or user misconduct.\n\n
+        7. Modifications to Terms\nWe reserve the right to update these Terms and Agreement at any time. Continued use of the app implies acceptance of updated terms.\n\n
+        8. Contact Us\nFor questions or concerns regarding these terms, please contact us at [recipemesupport@gmail.com].</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.ph.recipeme.loadingScreen.security;
+package com.ph.recipeme.social.security;
 
 import android.content.Context;
 import android.os.Build;

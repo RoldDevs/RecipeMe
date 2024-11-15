@@ -1,6 +1,5 @@
-package com.ph.recipeme.loadingScreen.navigationFragments;
+package com.ph.recipeme.social.navigationFragments;
 
-import android.hardware.lights.LightState;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.denzcoskun.imageslider.ImageSlider;
-import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.ph.recipeme.R;
 

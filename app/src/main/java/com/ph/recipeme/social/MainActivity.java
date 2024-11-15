@@ -1,4 +1,4 @@
-package com.ph.recipeme.loadingScreen;
+package com.ph.recipeme.social;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,8 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.ph.recipeme.R;
-import com.ph.recipeme.loadingScreen.MainScreen.SignIn;
-import com.ph.recipeme.loadingScreen.security.EmulatorCheckUtil;
+import com.ph.recipeme.social.MainScreen.SignIn;
+import com.ph.recipeme.social.security.EmulatorCheckUtil;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,8 +1,7 @@
-package com.ph.recipeme.loadingScreen.SignInScreen;
+package com.ph.recipeme.social.SignInScreen;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -12,7 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.ph.recipeme.R;
-import com.ph.recipeme.loadingScreen.MainScreen.SignUp;
+import com.ph.recipeme.social.MainScreen.SignUp;
 
 public class mainSignIn extends AppCompatActivity {
 

@@ -15,22 +15,22 @@
         android:theme="@style/Theme.RecipeMe"
         tools:targetApi="31">
         <activity
-            android:name=".loadingScreen.ForgotPasswordFunction.TermsAndAgreement"
+            android:name=".social.ForgotPasswordFunction.TermsAndAgreement"
             android:exported="false" />
         <activity
-            android:name=".loadingScreen.MainPage.userdisplay"
+            android:name=".social.MainPage.userdisplay"
             android:exported="false" />
         <activity
-            android:name=".loadingScreen.SignInScreen.mainSignIn"
+            android:name=".social.SignInScreen.mainSignIn"
             android:exported="false" />
         <activity
-            android:name=".loadingScreen.MainScreen.SignUp"
+            android:name=".social.MainScreen.SignUp"
             android:exported="false" />
         <activity
-            android:name=".loadingScreen.MainScreen.SignIn"
+            android:name=".social.MainScreen.SignIn"
             android:exported="false" />
         <activity
-            android:name=".loadingScreen.MainActivity"
+            android:name=".social.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

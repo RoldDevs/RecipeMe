@@ -1,4 +1,4 @@
-package com.ph.recipeme.loadingScreen.MainPage;
+package com.ph.recipeme.social.MainPage;
 
 import android.os.Bundle;
 import androidx.activity.EdgeToEdge;
@@ -11,10 +11,10 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.ph.recipeme.R;
-import com.ph.recipeme.loadingScreen.navigationFragments.CommunityFragment;
-import com.ph.recipeme.loadingScreen.navigationFragments.FavoritesFragment;
-import com.ph.recipeme.loadingScreen.navigationFragments.ForumFragment;
-import com.ph.recipeme.loadingScreen.navigationFragments.HomeFragment;
+import com.ph.recipeme.social.navigationFragments.CommunityFragment;
+import com.ph.recipeme.social.navigationFragments.FavoritesFragment;
+import com.ph.recipeme.social.navigationFragments.ForumFragment;
+import com.ph.recipeme.social.navigationFragments.HomeFragment;
 
 public class userdisplay extends AppCompatActivity {
 

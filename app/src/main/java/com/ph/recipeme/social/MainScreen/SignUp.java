@@ -1,4 +1,4 @@
-package com.ph.recipeme.loadingScreen.MainScreen;
+package com.ph.recipeme.social.MainScreen;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,8 +17,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.ph.recipeme.R;
-import com.ph.recipeme.loadingScreen.ForgotPasswordFunction.TermsAndAgreement;
-import com.ph.recipeme.loadingScreen.SignInScreen.mainSignIn;
+import com.ph.recipeme.social.ForgotPasswordFunction.TermsAndAgreement;
+import com.ph.recipeme.social.SignInScreen.mainSignIn;
 
 public class SignUp extends AppCompatActivity {
     private String userFullname, userEmailaddress, userContactnumber, userPassword, userConfirmedPassword;

@@ -1,4 +1,4 @@
-package com.ph.recipeme.loadingScreen.navigationFragments;
+package com.ph.recipeme.social.navigationFragments;
 
 import android.os.Bundle;
 

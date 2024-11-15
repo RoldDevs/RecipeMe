@@ -1,4 +1,4 @@
-package com.ph.recipeme.loadingScreen.ForgotPasswordFunction;
+package com.ph.recipeme.social.ForgotPasswordFunction;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -14,7 +14,6 @@ import com.ph.recipeme.R;
 
 
 public class TermsAndAgreement extends AppCompatActivity {
-
     Button agreeButton;
     CheckBox checkBox;
 

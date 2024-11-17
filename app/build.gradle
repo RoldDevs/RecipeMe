@@ -9,7 +9,7 @@ android {
     defaultConfig {
         applicationId "com.ph.recipeme"
         minSdk 29
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -47,5 +47,9 @@ dependencies {
     implementation libs.imageslideshow
 
     implementation platform(libs.firebase.bom)
+    implementation libs.firebase.auth
+    implementation libs.firebase.firestore
     implementation libs.firebase.analytics
+
+    apply plugin: 'com.google.gms.google-services'
 }

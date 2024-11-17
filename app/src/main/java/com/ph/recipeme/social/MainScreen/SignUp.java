@@ -16,11 +16,22 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 import com.ph.recipeme.R;
 import com.ph.recipeme.social.ForgotPasswordFunction.TermsAndAgreement;
 import com.ph.recipeme.social.SignInScreen.mainSignIn;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class SignUp extends AppCompatActivity {
+
+    // Declare Firebase instances
+    private FirebaseAuth mAuth;
+    private FirebaseFirestore db;
     private String userFullname, userEmailaddress, userContactnumber, userPassword, userConfirmedPassword;
     TextView signinprocess;
     Button signUp;
@@ -36,6 +47,10 @@ public class SignUp extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // Initialize Firebase Auth and Firestore
+        mAuth = FirebaseAuth.getInstance();
+        db = FirebaseFirestore.getInstance();
 
         signinprocess = findViewById(R.id.signInProcess);
         signUp = findViewById(R.id.signUpMe);
@@ -64,11 +79,37 @@ public class SignUp extends AppCompatActivity {
         });
 
         signUp.setOnClickListener(view -> {
-            // Check if fields are valid before moving to the next screen
             if (isValid()) {
-                Intent intent = new Intent(SignUp.this, TermsAndAgreement.class);
-                startActivity(intent);
-                finish();
+                // Attempt to create a user
+                mAuth.createUserWithEmailAndPassword(userEmailaddress, userPassword)
+                        .addOnCompleteListener(this, task -> {
+                            if (task.isSuccessful()) {
+                                // Get the current user
+                                FirebaseUser user = mAuth.getCurrentUser();
+
+                                // Create a user map for Firestore
+                                Map<String, Object> userData = new HashMap<>();
+                                userData.put("fullName", userFullname);
+                                userData.put("email", userEmailaddress);
+                                userData.put("contactNumber", userContactnumber);
+
+                                // Save user data in Firestore
+                                db.collection("users").document(user.getUid())
+                                        .set(userData)
+                                        .addOnSuccessListener(aVoid -> {
+                                            showToast("Sign-up successful! Welcome.");
+                                            // Navigate to the next screen
+                                            Intent intent = new Intent(SignUp.this, TermsAndAgreement.class);
+                                            startActivity(intent);
+                                            finish();
+                                        })
+                                        .addOnFailureListener(e -> {
+                                            showToast("Failed to store user data: " + e.getMessage());
+                                        });
+                            } else {
+                                showToast("Authentication failed: " + task.getException().getMessage());
+                            }
+                        });
             }
         });
     }
@@ -160,4 +201,6 @@ public class SignUp extends AppCompatActivity {
             callback.run();
         }
     }
+
+
 }

@@ -1,5 +1,6 @@
 package com.ph.recipeme.social.ForgotPasswordFunction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -11,6 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.ph.recipeme.R;
+import com.ph.recipeme.social.MainPage.userdisplay;
 
 
 public class TermsAndAgreement extends AppCompatActivity {
@@ -39,7 +41,9 @@ public class TermsAndAgreement extends AppCompatActivity {
         });
 
         agreeButton.setOnClickListener(view -> {
-            // TODO
+            Intent intent = new Intent(TermsAndAgreement.this, userdisplay.class);
+            startActivity(intent);
+            finish();
         });
 
     }

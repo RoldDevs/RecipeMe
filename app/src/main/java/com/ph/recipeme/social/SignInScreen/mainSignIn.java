@@ -19,9 +19,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 import com.ph.recipeme.R;
 import com.ph.recipeme.social.MainPage.userdisplay;
-import com.ph.recipeme.social.MainScreen.SignIn;
 import com.ph.recipeme.social.MainScreen.SignUp;
-import com.ph.recipeme.social.navigationFragments.HomeFragment;
 
 public class mainSignIn extends AppCompatActivity {
 

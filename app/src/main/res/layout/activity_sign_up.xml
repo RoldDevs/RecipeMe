@@ -78,20 +78,33 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/animation_view"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_margin="5dp"
-                app:layout_constraintBottom_toTopOf="@+id/recipeTitle"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.85"
-                app:lottie_autoPlay="true"
-                app:lottie_fileName="mainsignin_animation.json"
-                app:lottie_loop="true" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="start"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="15dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/baseline_account_circle_24"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginStart="8dp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
 
             <EditText
                 android:id="@+id/userName"
@@ -107,10 +120,38 @@
                 android:textSize="15sp"
                 android:textColorHint="@color/gray"
                 android:textColor="@color/black"
-                android:hint="Full Name"
+                android:hint="Enter your full name"
                 android:inputType="text"
                 android:textAlignment="center"
                 tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="start"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="15dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/baseline_email_24"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Address"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginStart="8dp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
 
             <EditText
                 android:id="@+id/userGmail"
@@ -128,8 +169,36 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textColorHint="@color/gray"
-                android:hint="Email Address"
+                android:hint="Enter your email address"
                 tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="start"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="15dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/baseline_local_phone_24"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Number"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginStart="8dp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
 
             <EditText
                 android:id="@+id/userPhoneNumber"
@@ -150,6 +219,34 @@
                 android:hint="(+CC) 0123-456-789"
                 tools:ignore="HardcodedText" />
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="start"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="15dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/baseline_password_24"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginStart="8dp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
             <EditText
                 android:id="@+id/userPassword"
                 android:layout_width="match_parent"
@@ -166,8 +263,36 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textColorHint="@color/gray"
-                android:hint="Password"
+                android:hint="Enter your password"
                 tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="start"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="15dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/baseline_password_24"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm password"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginStart="8dp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
 
             <EditText
                 android:id="@+id/userConfirmPassword"
@@ -185,7 +310,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textColorHint="@color/gray"
-                android:hint="Confirm Password"
+                android:hint="Re-type your Password"
                 tools:ignore="HardcodedText" />
 
         </LinearLayout>

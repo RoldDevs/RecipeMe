@@ -37,6 +37,8 @@ public class TermsAndAgreement extends AppCompatActivity {
         checkBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
                 agreeButton.setEnabled(true);
+            } else {
+                agreeButton.setEnabled(false);
             }
         });
 

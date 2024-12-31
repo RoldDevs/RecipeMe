@@ -58,19 +58,18 @@
         android:layout_width="match_parent"
         android:layout_height="570dp"
         android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
         android:layout_marginTop="40dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="10dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="12dp"
         app:cardElevation="15dp"
         app:cardUseCompatPadding="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.151">
+        app:layout_constraintVertical_bias="0.107">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -81,10 +80,10 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_gravity="start"
-                android:layout_marginBottom="3dp"
                 android:layout_marginStart="15dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
 
                 <ImageView
@@ -97,11 +96,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Full Name"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/poppins_medium"
                     android:layout_marginStart="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Full Name"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
                     tools:ignore="HardcodedText" />
 
             </LinearLayout>
@@ -113,25 +112,25 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="10dp"
-                android:importantForAutofill="no"
-                android:fontFamily="@font/poppins_medium"
-                android:padding="10dp"
                 android:background="@drawable/edittext_style"
-                android:textSize="15sp"
-                android:textColorHint="@color/gray"
-                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
                 android:hint="Enter your full name"
+                android:importantForAutofill="no"
                 android:inputType="text"
+                android:padding="10dp"
                 android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_gravity="start"
-                android:layout_marginBottom="3dp"
                 android:layout_marginStart="15dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
 
                 <ImageView
@@ -144,11 +143,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Email Address"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/poppins_medium"
                     android:layout_marginStart="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Email Address"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
                     tools:ignore="HardcodedText" />
 
             </LinearLayout>
@@ -160,25 +159,25 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_style"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Enter your email address"
                 android:importantForAutofill="no"
                 android:inputType="textEmailAddress"
-                android:fontFamily="@font/poppins_medium"
                 android:padding="10dp"
-                android:background="@drawable/edittext_style"
-                android:textSize="15sp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textColorHint="@color/gray"
-                android:hint="Enter your email address"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_gravity="start"
-                android:layout_marginBottom="3dp"
                 android:layout_marginStart="15dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
 
                 <ImageView
@@ -191,11 +190,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Contact Number"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/poppins_medium"
                     android:layout_marginStart="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Contact Number"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
                     tools:ignore="HardcodedText" />
 
             </LinearLayout>
@@ -207,25 +206,25 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_style"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="(+CC) 0123-456-789"
                 android:importantForAutofill="no"
                 android:inputType="phone"
-                android:fontFamily="@font/poppins_medium"
                 android:padding="10dp"
-                android:background="@drawable/edittext_style"
-                android:textSize="15sp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textColorHint="@color/gray"
-                android:hint="(+CC) 0123-456-789"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_gravity="start"
-                android:layout_marginBottom="3dp"
                 android:layout_marginStart="15dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
 
                 <ImageView
@@ -238,11 +237,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Password"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/poppins_medium"
                     android:layout_marginStart="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Password"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
                     tools:ignore="HardcodedText" />
 
             </LinearLayout>
@@ -254,25 +253,25 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_style"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Enter your password"
                 android:importantForAutofill="no"
                 android:inputType="textPassword"
-                android:fontFamily="@font/poppins_medium"
                 android:padding="10dp"
-                android:background="@drawable/edittext_style"
-                android:textSize="15sp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textColorHint="@color/gray"
-                android:hint="Enter your password"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_gravity="start"
-                android:layout_marginBottom="3dp"
                 android:layout_marginStart="15dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
 
                 <ImageView
@@ -285,11 +284,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Confirm password"
-                    android:textSize="14sp"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/poppins_medium"
                     android:layout_marginStart="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Confirm password"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
                     tools:ignore="HardcodedText" />
 
             </LinearLayout>
@@ -301,16 +300,16 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext_style"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Re-type your Password"
                 android:importantForAutofill="no"
                 android:inputType="textPassword"
-                android:fontFamily="@font/poppins_medium"
                 android:padding="10dp"
-                android:background="@drawable/edittext_style"
-                android:textSize="15sp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textColorHint="@color/gray"
-                android:hint="Re-type your Password"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText" />
 
         </LinearLayout>

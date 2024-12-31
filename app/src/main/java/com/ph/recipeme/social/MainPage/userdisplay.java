@@ -1,7 +1,5 @@
 package com.ph.recipeme.social.MainPage;
 
-import static androidx.core.content.ContextCompat.startActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -24,8 +22,6 @@ import com.ph.recipeme.social.userProfile.myProfile;
 
 public class userdisplay extends AppCompatActivity {
 
-    private FloatingActionButton userProfile;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +39,7 @@ public class userdisplay extends AppCompatActivity {
         bottomNavigationView.setOnItemSelectedListener(navListener);
         getSupportFragmentManager().beginTransaction().replace(R.id.homefragmentlayout, new HomeFragment()).commit();
 
-        userProfile = findViewById(R.id.floatingButton);
+        FloatingActionButton userProfile = findViewById(R.id.floatingButton);
         userProfile.setOnClickListener(view -> {
             Intent intent = new Intent(userdisplay.this, myProfile.class);
             startActivity(intent);
@@ -51,7 +47,7 @@ public class userdisplay extends AppCompatActivity {
     }
     private final NavigationBarView.OnItemSelectedListener navListener = item -> {
         int itemId = item.getItemId();
-        Fragment selectedFragment = null;
+        Fragment selectedFragment;
 
         if (itemId == R.id.homepage) {
             selectedFragment = new HomeFragment();

@@ -32,10 +32,10 @@ public class SignUp extends AppCompatActivity {
     // Declare Firebase instances
     private FirebaseAuth mAuth;
     private FirebaseFirestore db;
-    private String userFullname, userEmailaddress, userContactnumber, userPassword, userConfirmedPassword;
+    private String userFullname, userUsername, userEmailaddress, userContactnumber, userPassword, userConfirmedPassword;
     TextView signinprocess;
     Button signUp;
-    EditText fullName, emailAddress, contactNo, password, confirmedPassword;
+    EditText fullName, userName, emailAddress, contactNo, password, confirmedPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +56,7 @@ public class SignUp extends AppCompatActivity {
         signUp = findViewById(R.id.signUpMe);
 
         fullName = findViewById(R.id.userName);
+        userName = findViewById(R.id.userUsername);
         emailAddress = findViewById(R.id.userGmail);
         contactNo = findViewById(R.id.userPhoneNumber);
         password = findViewById(R.id.userPassword);
@@ -66,6 +67,7 @@ public class SignUp extends AppCompatActivity {
 
         // Set up a listener on each EditText to validate fields when text is changed
         fullName.addTextChangedListener(new TextWatcherAdapter(this::validateFields));
+        userName.addTextChangedListener(new TextWatcherAdapter(this::validateFields));
         emailAddress.addTextChangedListener(new TextWatcherAdapter(this::validateFields));
         contactNo.addTextChangedListener(new TextWatcherAdapter(this::validateFields));
         password.addTextChangedListener(new TextWatcherAdapter(this::validateFields));
@@ -90,6 +92,7 @@ public class SignUp extends AppCompatActivity {
                                 // Create a user map for Firestore
                                 Map<String, Object> userData = new HashMap<>();
                                 userData.put("fullName", userFullname);
+                                userData.put("userName", userUsername);
                                 userData.put("email", userEmailaddress);
                                 userData.put("contactNumber", userContactnumber);
 
@@ -117,6 +120,7 @@ public class SignUp extends AppCompatActivity {
     // Method to validate if all fields are filled in
     private void validateFields() {
         userFullname = fullName.getText().toString().trim();
+        userUsername = userName.getText().toString().trim();
         userEmailaddress = emailAddress.getText().toString().trim();
         userContactnumber = contactNo.getText().toString().trim();
         userPassword = password.getText().toString().trim();
@@ -124,6 +128,7 @@ public class SignUp extends AppCompatActivity {
 
         // Sign-up button enabled only after the text fields are validated
         signUp.setEnabled(!TextUtils.isEmpty(userFullname) &&
+                !TextUtils.isEmpty(userUsername) &&
                 !TextUtils.isEmpty(userEmailaddress) &&
                 !TextUtils.isEmpty(userContactnumber) &&
                 !TextUtils.isEmpty(userPassword) &&
@@ -132,7 +137,7 @@ public class SignUp extends AppCompatActivity {
 
     // Method to check if the form is valid (password match and no empty fields)
     private boolean isValid() {
-        if (TextUtils.isEmpty(userFullname) || TextUtils.isEmpty(userEmailaddress) ||
+        if (TextUtils.isEmpty(userFullname) || TextUtils.isEmpty(userUsername) ||TextUtils.isEmpty(userEmailaddress) ||
                 TextUtils.isEmpty(userContactnumber) || TextUtils.isEmpty(userPassword) ||
                 TextUtils.isEmpty(userConfirmedPassword)) {
             showToast("Please fill out all fields.");
@@ -142,6 +147,12 @@ public class SignUp extends AppCompatActivity {
         int charCount = userFullname.length();
         if (charCount < 8) {
             showToast("Full name should more than 8 characters");
+            return false;
+        }
+
+        int charUsernameCount = userUsername.length();
+        if (charUsernameCount > 5) {
+            showToast("User name should less than 5 characters");
             return false;
         }
 

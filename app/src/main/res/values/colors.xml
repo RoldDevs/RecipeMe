@@ -9,6 +9,7 @@
     <color name="avocado_green">#4B8B3B</color>
     <color name="burnt_orange">#C65D29</color>
     <color name="mustard_yellow">#D1A62D</color>
+    <color name="light_brown">#997950</color>
     <color name="brown">#5B3A29</color>
     <color name="cream">#F6E2B5</color>
 
@@ -35,6 +36,7 @@
     <!-- Classic Retro -->
     <color name="cherry_red">#FF2B2B</color>
     <color name="rose_red">#FF033E</color>
+    <color name="cerise_red">#DE3163</color>
     <color name="royal_blue">#4169E1</color>
     <color name="golden_yellow">#FFD700</color>
     <color name="forest_green">#228B22</color>

@@ -34,8 +34,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:textSize="25sp"
-            android:text="User Name"
+            android:textSize="30sp"
+            android:text="Harold"
             android:fontFamily="@font/poppins_bold"
             android:padding="5dp"
             android:gravity="center"
@@ -45,6 +45,291 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnMenu"
             tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <!-- Favorite Food Section -->
+        <TextView
+            android:id="@+id/favoriteFoodTextInter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favorite Food Categories!"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileUser"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <!-- ChipGroup for selecting foods (Initially hidden) -->
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/favoriteFoodTextInter">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipFruits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/poppins"
+                android:text="Fruits"
+                android:textColor="@color/black"
+                app:checkedIcon="@drawable/fruit_24"
+                app:checkedIconEnabled="true"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/black"
+                app:rippleColor="@color/rose_red"
+                app:chipMinTouchTargetSize="0dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipVegetables"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/poppins"
+                android:text="Vegetables"
+                android:textColor="@color/black"
+                app:checkedIcon="@drawable/vege_24"
+                app:checkedIconEnabled="true"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/black"
+                app:rippleColor="@color/lime_green"
+                app:chipMinTouchTargetSize="0dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipGrains"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/poppins"
+                android:text="Grains &amp; Cereals"
+                android:textColor="@color/black"
+                app:checkedIcon="@drawable/grain_24"
+                app:checkedIconEnabled="true"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/black"
+                app:rippleColor="@color/pale_yellow"
+                app:chipMinTouchTargetSize="0dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipLegumes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/poppins"
+                android:text="Legumes &amp; Pulses"
+                android:textColor="@color/black"
+                app:checkedIcon="@drawable/beans_24"
+                app:checkedIconEnabled="true"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/black"
+                app:rippleColor="@color/light_brown"
+                app:chipMinTouchTargetSize="0dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipNuts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/poppins"
+                android:text="Nuts &amp; Seeds"
+                android:textColor="@color/black"
+                app:checkedIcon="@drawable/nute_24"
+                app:checkedIconEnabled="true"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/black"
+                app:rippleColor="@color/burnt_orange"
+                app:chipMinTouchTargetSize="0dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipDairy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/poppins"
+                android:text="Dairy Products"
+                android:textColor="@color/black"
+                app:checkedIcon="@drawable/dairy_24"
+                app:checkedIconEnabled="true"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/black"
+                app:rippleColor="@color/royal_blue"
+                app:chipMinTouchTargetSize="0dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipMeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/poppins"
+                android:text="Meat &amp; Poultry"
+                android:textColor="@color/black"
+                app:checkedIcon="@drawable/meat_24"
+                app:checkedIconEnabled="true"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/black"
+                app:rippleColor="@color/cerise_red"
+                app:chipMinTouchTargetSize="0dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipFish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/poppins"
+                android:text="Fish &amp; Seafood"
+                android:textColor="@color/black"
+                app:checkedIcon="@drawable/fish_24"
+                app:checkedIconEnabled="true"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/black"
+                app:rippleColor="@color/cerise_red"
+                app:chipMinTouchTargetSize="0dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipEggs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/poppins"
+                android:text="Eggs"
+                android:textColor="@color/black"
+                app:checkedIcon="@drawable/eggs_24"
+                app:checkedIconEnabled="true"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/black"
+                app:rippleColor="@color/cerise_red"
+                app:chipMinTouchTargetSize="0dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipBread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/poppins"
+                android:text="Breads &amp; Pastries"
+                android:textColor="@color/black"
+                app:checkedIcon="@drawable/bread_24"
+                app:checkedIconEnabled="true"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/black"
+                app:rippleColor="@color/cerise_red"
+                app:chipMinTouchTargetSize="0dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipSweets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/poppins"
+                android:text="Sweets &amp; Desserts"
+                android:textColor="@color/black"
+                app:checkedIcon="@drawable/sweets_24"
+                app:checkedIconEnabled="true"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/black"
+                app:rippleColor="@color/cerise_red"
+                app:chipMinTouchTargetSize="0dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipBeverages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/poppins"
+                android:text="Beverages"
+                android:textColor="@color/black"
+                app:checkedIcon="@drawable/beverages_24"
+                app:checkedIconEnabled="true"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/black"
+                app:rippleColor="@color/cerise_red"
+                app:chipMinTouchTargetSize="0dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipOil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/poppins"
+                android:text="Oils &amp; Fats"
+                android:textColor="@color/black"
+                app:checkedIcon="@drawable/oily_24"
+                app:checkedIconEnabled="true"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/black"
+                app:rippleColor="@color/cerise_red"
+                app:chipMinTouchTargetSize="0dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipCondiments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/poppins"
+                android:text="Condiments &amp; Spices"
+                android:textColor="@color/black"
+                app:checkedIcon="@drawable/condiments_24"
+                app:checkedIconEnabled="true"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/black"
+                app:rippleColor="@color/cerise_red"
+                app:chipMinTouchTargetSize="0dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipProcessed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/poppins"
+                android:text="Prepared &amp; Processed Foods"
+                android:textColor="@color/black"
+                app:checkedIcon="@drawable/burger_24"
+                app:checkedIconEnabled="true"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/black"
+                app:rippleColor="@color/cerise_red"
+                app:chipMinTouchTargetSize="0dp"
+                tools:ignore="HardcodedText" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipEthic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/poppins"
+                android:text="Ethnic &amp; Regional Cuisines"
+                android:textColor="@color/black"
+                app:checkedIcon="@drawable/cuisine_24"
+                app:checkedIconEnabled="true"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/black"
+                app:rippleColor="@color/cerise_red"
+                app:chipMinTouchTargetSize="0dp"
+                tools:ignore="HardcodedText" />
+
+            <!-- Add more food options here -->
+        </com.google.android.material.chip.ChipGroup>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

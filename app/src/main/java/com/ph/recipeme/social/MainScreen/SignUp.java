@@ -95,6 +95,7 @@ public class SignUp extends AppCompatActivity {
                                 userData.put("userName", userUsername);
                                 userData.put("email", userEmailaddress);
                                 userData.put("contactNumber", userContactnumber);
+                                userData.put("favoriteFoods", "FOOD PROFILE");
 
                                 // Save user data in Firestore
                                 db.collection("users").document(user.getUid())
@@ -151,8 +152,8 @@ public class SignUp extends AppCompatActivity {
         }
 
         int charUsernameCount = userUsername.length();
-        if (charUsernameCount > 5) {
-            showToast("User name should less than 5 characters");
+        if (charUsernameCount > 6) {
+            showToast("User name should less than 6 characters");
             return false;
         }
 
